@@ -1,0 +1,48 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    app:cardCornerRadius="16dp"
+    android:layout_margin="@dimen/material_component_cards_space_between_cards"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.mountzoft.android.xyzreader.ui.DynamicHeightNetworkImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@color/material_grey_300"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/article_title"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="@dimen/material_component_cards_left_and_right_padding"
+            android:paddingRight="@dimen/material_component_cards_left_and_right_padding"
+            android:paddingTop="@dimen/material_component_cards_top_and_bottom_padding" />
+
+        <TextView
+            android:id="@+id/article_subtitle"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:paddingBottom="16dp"
+            android:paddingLeft="@dimen/material_component_cards_left_and_right_padding"
+            android:paddingRight="@dimen/material_component_cards_left_and_right_padding"/>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
